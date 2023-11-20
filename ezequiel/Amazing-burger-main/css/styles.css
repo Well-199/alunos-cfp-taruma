@@ -163,3 +163,68 @@ html, body {
     padding-bottom: 25px;
     margin-top: 80px;
 }
+
+.carousel {
+    width: 1080px;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    background-image: url('../images/fundo-banner.png');
+}
+
+.carousel-card {
+    width: 260px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: var(--color-background);
+}
+
+.carousel-image {
+    width: 100%;
+    height: 441px;
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../images/Card-burger-31.png');
+    animation-name: product-image;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes product-image {
+    0%   {background-image: url('../images/Card-burger-11.png');}
+    25%  {background-image: url('../images/Card-burger-1.png');}
+    50%  {background-image: url('../images/Card-burger-31.png');}
+    75%  {background-image: url('../images/Card-burger-41.png');}
+    100% {background-image: url('../images/Card-burger-31.png');}
+}
+
+.carousel-image img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.carousel-description {
+    width: 240px;
+    height: 241px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: -30px;
+}
+
+.product-type:after {
+    font-size: 18px;
+    margin-left: 15px;
+    content: 'Tradicional';
+}
