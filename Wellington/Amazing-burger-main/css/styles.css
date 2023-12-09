@@ -328,3 +328,161 @@ html, body {
     justify-content: center;
     align-items: flex-start;
 }
+
+.products-cards-name {
+    font-size: 28px;
+    margin-left: 15px;
+    color: var(--color-gray);
+}
+
+.products-cards-price {
+    margin-left: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--color-brown);
+    padding-bottom: 20px;
+}
+
+.testimony {
+    width: 1080px;
+    height: auto;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.testimony-title {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-brown);
+    padding-bottom: 25px;
+}
+
+.testimony-container {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimony-text {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-yellow);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.testimony-text h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: var(--color-brown);
+}
+
+.testimony-text h1:after {
+    content: 'Muito top o atendimento, chegou super rápido, e também recebi um super desconto.';
+    animation-name: testimony-text;
+    animation-duration: 38s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes testimony-text {
+    0%   {
+        content: 'Parabéns!!! Vcs são demais quando via a imagem duvidei, mas o lanche é idêntico o da foto.';
+    }
+    25%  {
+        content: 'O desconto da semana na segunda-feira é sempre o melhor para mim que não curto cozinha vale muito a pena.';
+    }
+    50%  {
+        content: 'Era o que faltava aqui na cidade, tem ótimos lanches por aqui, mas com essa qualidade e preço só o de vocês';
+    }
+    75%  {
+        content: 'Parabéns!!! Vcs são demais quando via a imagem duvidei, mas o lanche é idêntico o da foto.';
+    }
+    100% {
+        content: 'Muito top o atendimento, chegou super rápido, e também recebi um super desconto.';
+    }
+}
+
+.testimony-text span {
+    margin-top: 10px;
+    font-size: 22px;
+    text-align: center;
+    color: var(--color-brown);
+}
+
+.testimony-text span:after {
+    content: 'Willian Joseph';
+    animation-name: testimony-autor;
+    animation-duration: 38s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes testimony-autor {
+    0%   {content: 'Ana Silva';}
+    25%  {content: 'Naiara Lima';}
+    50%  {content: 'Marcos Batista';}
+    75%  {content: 'Ana Silva';}
+    100% {content: 'Willian Joseph';}
+}
+
+.testimony-video {
+    width: 100%;
+    display: flex;
+}
+
+.video {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.form {
+    width: 1080px;
+    height: auto;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-title {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-brown);
+    padding-bottom: 25px;
+}
+
+form {
+    width: 550px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+
+[type="text"], [type="tel"], [type="datetime-local"], 
+[type="file"], [name="products"] {
+    width: 350px;
+    height: 40px;
+    border: none;
+    text-decoration-line: none;
+    color: var(--color-gray);
+    border-bottom: solid 1px var(--color-gray);
+}
